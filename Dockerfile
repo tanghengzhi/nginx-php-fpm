@@ -1,4 +1,8 @@
+# official php-fpm images
+
 FROM php:7.2-fpm
+
+# official nginx images
 
 LABEL maintainer="NGINX Docker Maintainers <docker-maint@nginx.com>"
 
@@ -96,4 +100,7 @@ EXPOSE 80
 
 STOPSIGNAL SIGTERM
 
-CMD ["nginx", "-g", "daemon off;"]
+# start up scripts
+
+COPY ./scripts/start.sh /opt/scripts/start.sh
+CMD ["bash", "/opt/scripts/start.sh"]
