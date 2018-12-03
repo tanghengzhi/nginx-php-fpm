@@ -100,6 +100,14 @@ EXPOSE 80
 
 STOPSIGNAL SIGTERM
 
+# install php extensions
+
+RUN docker-php-ext-install pdo_mysql bcmath
+
+# install procps
+
+RUN apt-get update && apt-get install -y procps
+
 # start up scripts
 
 COPY ./scripts/start.sh /opt/scripts/start.sh
