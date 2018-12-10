@@ -1,13 +1,13 @@
 # official php-fpm images
 
-FROM php:7.2-fpm
+FROM php:7.2.12-fpm
 
 # official nginx images
 
 LABEL maintainer="NGINX Docker Maintainers <docker-maint@nginx.com>"
 
-ENV NGINX_VERSION 1.14.1-1~stretch
-ENV NJS_VERSION   1.14.1.0.2.5-1~stretch
+ENV NGINX_VERSION 1.14.2-1~stretch
+ENV NJS_VERSION   1.14.2.0.2.6-1~stretch
 
 RUN set -x \
 	&& apt-get update \
