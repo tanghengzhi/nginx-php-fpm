@@ -2,25 +2,26 @@
 
 Combine the official nginx and php-fpm images
 
+[GitHub](https://github.com/tanghengzhi/nginx-php-fpm)
+
+[Docker Hub](https://hub.docker.com/r/tanghengzhi/nginx-php-fpm/)
+
 # Support Tags
 
 |  Tags   |  Nginx  |  PHP   |
 |---------|:-------:|-------:|
-| latest  | 1.14.2  | 7.2.12 |
-| 7.2     | 1.14.2  | 7.2.12 |
-| 7.2.12  | 1.14.2  | 7.2.12 |
+| latest  | 1.14.2  | 7.3.0  |
+| 7.3     | 1.14.2  | 7.3.0  |
+| 7.2     | 1.14.2  | 7.2.13 |
 
-# Pull Command
-
-docker pull tanghengzhi/nginx-php-fpm
-
-docker pull tanghengzhi/nginx-php-fpm:7.2
-
-docker pull tanghengzhi/nginx-php-fpm:7.2.12
-
-# Push Command
+# Build Docker images
 
 docker build -t tanghengzhi/nginx-php-fpm .
+docker build -f 7.2/Dockerfile -t tanghengzhi/nginx-php-fpm:7.2
+
+# Push Docker images to Docker Cloud
+
+
 
 docker push tanghengzhi/nginx-php-fpm
 
