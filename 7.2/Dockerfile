@@ -106,7 +106,7 @@ RUN docker-php-ext-install pdo_mysql bcmath
 
 # install procps
 
-RUN apt-get update && apt-get install -y procps
+RUN apt-get update && apt-get install -y procps openssl ca-certificates
 
 # start up scripts
 
