@@ -10,9 +10,9 @@ Combine the official nginx and php-fpm images
 
 |  Tags   |  Nginx  |  PHP   |
 |---------|:-------:|-------:|
-| latest  | 1.14.2  | 7.3.3  |
-| 7.3     | 1.14.2  | 7.3.3  |
-| 7.2     | 1.14.2  | 7.2.16 |
+| latest  | 1.14.2  | 7.3.4  |
+| 7.3     | 1.14.2  | 7.3.4  |
+| 7.2     | 1.14.2  | 7.2.17 |
 
 # Build Docker images
 
