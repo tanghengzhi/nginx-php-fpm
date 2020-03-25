@@ -100,9 +100,13 @@ EXPOSE 80
 
 STOPSIGNAL SIGTERM
 
+# nginx conf
+
+COPY /nginx/default.conf /etc/nginx/conf.d/default.conf
+
 # install php extensions
 
-RUN docker-php-ext-install pdo_mysql bcmath
+RUN docker-php-ext-install mysqli pdo_mysql bcmath
 
 # install procps
 
