@@ -1,6 +1,6 @@
 # official php-fpm images
 
-FROM php:7.4.4-fpm
+FROM php:7.4.17-fpm
 
 # official nginx images
 
