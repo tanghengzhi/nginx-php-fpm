@@ -112,6 +112,7 @@ STOPSIGNAL SIGTERM
 # nginx conf
 
 COPY /nginx/default.conf /etc/nginx/conf.d/default.conf
+COPY /nginx/laravel.conf /etc/nginx/conf.d/laravel.conf
 
 # install php extensions
 
