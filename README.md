@@ -10,9 +10,9 @@ Combine the official nginx and php-fpm images
 
 |  Tags   |  Nginx  |  PHP   |
 |---------|:-------:|-------:|
-| latest  | 1.18.0  | 7.4.5  |
-| 7.3     | 1.18.0  | 7.3.17 |
-| 7.2     | 1.18.0  | 7.2.30 |
+| latest  | 1.18.0  | 7.4.14 |
+| 7.4     | 1.18.0  | 7.4.14 |
+| 8.0     | 1.18.0  | 8.0.1  |
 
 # Build Docker images
 
@@ -20,9 +20,7 @@ docker build -t tanghengzhi/nginx-php-fpm .
 
 docker build -f 7.4/Dockerfile -t tanghengzhi/nginx-php-fpm:7.4
 
-docker build -f 7.3/Dockerfile -t tanghengzhi/nginx-php-fpm:7.3
-
-docker build -f 7.2/Dockerfile -t tanghengzhi/nginx-php-fpm:7.2
+docker build -f 8.0/Dockerfile -t tanghengzhi/nginx-php-fpm:8.0
 
 # Push Docker images to Docker Cloud
 
@@ -30,6 +28,4 @@ docker push tanghengzhi/nginx-php-fpm
 
 docker push tanghengzhi/nginx-php-fpm:7.4
 
-docker push tanghengzhi/nginx-php-fpm:7.3
-
-docker push tanghengzhi/nginx-php-fpm:7.2
+docker push tanghengzhi/nginx-php-fpm:8.0
