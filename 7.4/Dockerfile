@@ -116,7 +116,9 @@ COPY /nginx/laravel.conf /etc/nginx/conf.d/laravel.conf
 
 # install php extensions
 
-RUN docker-php-ext-install mysqli pdo_mysql bcmath
+RUN docker-php-ext-install opcache mysqli pdo_mysql bcmath
+RUN pecl install redis && docker-php-ext-enable redis
+RUN pecl install mongodb && docker-php-ext-enable mongodb
 
 # install procps
 
